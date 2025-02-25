@@ -1,0 +1,361 @@
+   
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: #757575;
+ }   
+ 
+ 
+ /* fiex  backgorind  */
+ body{
+    position: relative;
+    background: linear-gradient(rgba(256, 256, 256, .9), rgba(256, 256, 256, .9)), url(../img/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ /* nav */
+ .section-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 92px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+    /* display: none; */
+    transition: all 0.5s;
+    z-index: 9;
+    width: 100%;
+    
+  /* ul */
+}
+.list {
+    list-style: none;
+    display: flex;
+   padding-right: 30px;
+   margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+.list li{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* logo */
+.section-nav img{
+     padding-left: 70px;
+ width: 200px;
+ }
+ .section-nav .list a{
+    padding: 0 0 3px 0;
+    text-decoration: none;
+    display: inline-block;
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    outline: none;
+    
+ }
+
+ /*  boder  blue  */
+ .section-nav .list a {
+    position: relative; /* اضافه کردن position: relative برای والد */
+}
+
+.section-nav .list a::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 2px;
+    bottom: 2px;
+    left: 1px;
+    background: #4F84C4;
+    opacity: 0;
+    transition: .3s;
+}
+
+.section-nav .list a:hover::after {
+    opacity: 1; /* وقتی هاور شد، خط نمایش داده شود */
+    bottom: 0; /* تغییر موقعیت برای افکت زیباتر */
+}
+/* icon in mobile  */
+#icon{
+        padding: 20px;
+    font-size: 2rem;
+    display: none;
+}
+/* section  part */ 
+ .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+ }
+ /* iMG */
+   .IMG img
+   {
+    padding: 10% ;
+    width: 500px;
+    cursor: pointer;
+   }
+   .content h1
+   {
+    color: #666666;
+    font-size: 40px;
+    font-weight: 700;
+      padding-left: 50px;
+    margin-bottom: 20px;
+   }
+   
+   .content span{
+    color: #4F84C4;
+   }
+   p{
+    font-size: 22px;
+    margin-left: 32px;
+    color: #666666;
+    padding-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+    
+    margin-bottom: 10px;
+   }
+   p i{
+    color: #4F84C4;
+    padding-right: 10px;
+   }
+   .btn{
+    padding: 7px 20px;
+    color: #4F84C4;
+    font-size: 22px;
+    border: 2px solid #4F84C4;
+  margin-left: 50px;
+  margin-top: 20px;
+   }
+   .btn:hover{
+    background-color: #4F84C4;
+    color: #ffffff;
+      transition: 0.5s;
+   }
+.section-2{
+  background-color: #ffffff;
+  width: 100%;
+  height: 200vh;
+}
+ 
+.text-1{
+  color: #4F84C4;
+padding-top: 50px;
+
+  font-size: 4rem;
+  text-align: center;
+
+
+}
+.section-2 p{
+  text-align: center;
+  margin-top: 10px;
+  
+}
+ 
+ hr{
+  width: 50px; margin: 0 auto; 
+  border: 5px solid #757575;
+  border-radius: 10px;
+ }
+
+
+ h2{
+  color: #4F84C4;
+   
+
+ }
+
+
+.img img{
+  width: 300px ;
+  padding: 50px 50px;
+  cursor: pointer;
+}
+/* .section-about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+/* }
+   */
+/* .section-cotent{
+  display: flex;
+  align-items: center;
+   justify-content: space-around;
+}
+.section-about{
+padding: 50px 50px;
+}
+.box-content h2{
+  color: #4F84C4;
+       text-align: right;
+}
+.box-content h4{
+text-align: right;
+  
+}
+/* Update .icon container to center items */
+/* .box .icon{ */
+  /* position: relative;
+  width: 70px;
+  height: inherit;
+  float: right;
+
+}
+.icon i{
+  color: #4F84C4;
+  font-size: 50px;
+  margin-top: 5px;
+  padding: 30px;
+  float: right;
+} */ 
+.conta-sectin{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.conte-section{
+  padding: 50px;
+}
+.conte-section i{
+  padding: 20px;
+  font-size: 5rem;
+}
+.conta-sectin h2{
+  font-size: 4rem;
+}
+.conta-sectin h4{
+   text-align:left;
+  padding-left: 90px;
+  margin-top: 10px;
+}
+.img{
+  padding-right: 50px;
+}
+.img img{
+  box-shadow: 8px 9px 6px #666666;
+  border-radius: 5px;
+}
+#how{
+  background: #f0f0f0;
+  margin-top: 50px;
+}
+.section-3{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 5rem;
+   padding: 70px 70px;
+
+}
+.box-section-3 {
+
+  margin: 1
+  20px;
+}
+.box-section-3 i{
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4F84C4;
+  text-align: center;
+}
+.section-3 h2{
+  margin-top: 10px;
+  text-align: center;
+}
+.box-section-3 h4{
+  text-align: center;
+}
+.section-5-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.box-bg
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-c{
+  margin: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+.box-c h3{
+  color: #4F84C4;
+  text-align: center;
+  font-weight: bold;
+}
+.id{
+   margin-left: 110px;
+}
+.box-c h4{
+  color: #4F84C4;
+  text-align: center;
+}
+
+.box-c img{
+ width: 300px;
+ 
+padding: 50px;
+}
+.id{
+  margin-bottom: 40px;
+}
+.box-c:hover{
+  transform: scale(1.1); /* 10% بزرگ‌تر شود */
+  transition: transform 0.5s ease-in-out;
+}
+.content-w3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+..box-section-7 h2 ,h3 ,h4{
+text-align: center;
+}
+.w1{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.w1 img{
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+.w1 img:hover{
+ box-shadow: 8px 6px 6px #000;
+ transition: all 1s ease-in;
+}
+/* .footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #757575;
+} */
